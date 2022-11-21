@@ -28,7 +28,7 @@
 #' @export
 #'
 #'
-#' @example
+#' @examples
 #' library(cencrne)
 #' data(example.data)
 #' A                   = example.data$A

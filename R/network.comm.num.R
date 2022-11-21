@@ -41,7 +41,7 @@
 #' @importFrom stats kmeans median rnorm
 #' @import Matrix
 #'
-#' @example
+#' @examples
 #' library(cencrne)
 #' data(example.data)
 #' A                   = example.data$A
@@ -67,15 +67,15 @@
 #' int.list       = gen.int(A)
 #' Z.int          = int.list$Z.int
 #' B.int          = int.list$B.int
-#' res            = network.comm.num(A, sample.index.n, lambda, Z.int, B.int)
+#' # res            = network.comm.num(A, sample.index.n, lambda, Z.int, B.int)
 #'
 #'
-#' # output results
-#' K.hat = res$Opt_K # the estimated number of communities
-#' Z.hat = res$Opt_Z # the estimated embedding vectors corresponding to n nodes
-#' cluster.matrix.hat = res$Opt_cluster.matrix # the n * n estimated membership matrix
-#' evaluation(Z.hat, Z.true, cluster.matrix.hat, cluster.matrix.true,
-#'            P.true, Theta.true, K.hat, K.true)
+#' # # output results
+#' # K.hat = res$Opt_K # the estimated number of communities
+#' # Z.hat = res$Opt_Z # the estimated embedding vectors corresponding to n nodes
+#' # cluster.matrix.hat = res$Opt_cluster.matrix # the n * n estimated membership matrix
+#' # evaluation(Z.hat, Z.true, cluster.matrix.hat, cluster.matrix.true,
+#' #            P.true, Theta.true, K.hat, K.true)
 #'
 
 network.comm.num = function(A, sample.index.n, lambda, Z.int, B.int,

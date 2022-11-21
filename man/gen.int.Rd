@@ -42,6 +42,26 @@ Opt_cluster.matrix: A n * n membership matrix, whose (i,j)-element is 1, if node
 \description{
 The function generating the initial values.
 }
+\examples{
+library(cencrne)
+data(example.data)
+A                   = example.data$A
+K.true              = example.data$K.true
+Z.true              = example.data$Z.true
+B.true              = example.data$B.true
+P.true              = example.data$P.true
+Theta.true          = example.data$Theta.true
+cluster.matrix.true = example.data$cluster.matrix.true
+
+n              = dim(A)[1]
+sample.index.n = rbind(combn(n,2),1:(n*(n-1)/2))
+int.list       = gen.int(A)
+Z.int          = int.list$Z.int
+B.int          = int.list$B.int
+
+
+
+}
 \references{
 Ren, M., Zhang S., Zhang Q. and Ma S. (2022). Consistent Estimation of the Number of Communities via Regularized Network Embedding.
 }

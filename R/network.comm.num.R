@@ -52,6 +52,7 @@
 #' Theta.true          = example.data$Theta.true
 #' cluster.matrix.true = example.data$cluster.matrix.true
 #'
+#' n       = dim(A)[1]
 #' lam.max = 3
 #' lam.min = 0.5
 #' lam1.s  = 2/log(n)
@@ -61,12 +62,13 @@
 #'                          nlambda2=10,lambda2_max=lam.max*lam2.s,lambda2_min=lam.min*lam2.s,
 #'                          nlambda3=1,lambda3_max=lam.max*lam3.s,lambda3_min=lam.min*lam3.s)
 #'
-#' n              = dim(A)[1]
+#' # apply the proposed method
 #' sample.index.n = rbind(combn(n,2),1:(n*(n-1)/2))
 #' int.list       = gen.int(A)
 #' Z.int          = int.list$Z.int
 #' B.int          = int.list$B.int
 #' res            = network.comm.num(A, sample.index.n, lambda, Z.int, B.int)
+#'
 #'
 #' # output results
 #' K.hat = res$Opt_K # the estimated number of communities

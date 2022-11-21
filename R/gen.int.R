@@ -39,15 +39,6 @@
 #' Theta.true          = example.data$Theta.true
 #' cluster.matrix.true = example.data$cluster.matrix.true
 #'
-#' lam.max = 3
-#' lam.min = 0.5
-#' lam1.s  = 2/log(n)
-#' lam2.s  = sqrt(8*log(n)/n)
-#' lam3.s  = 1/8/log(n)/sqrt(n)
-#' lambda  = genelambda.obo(nlambda1=3,lambda1_max=lam.max*lam1.s,lambda1_min=lam.min*lam1.s,
-#'                          nlambda2=10,lambda2_max=lam.max*lam2.s,lambda2_min=lam.min*lam2.s,
-#'                          nlambda3=1,lambda3_max=lam.max*lam3.s,lambda3_min=lam.min*lam3.s)
-#'
 #' n              = dim(A)[1]
 #' sample.index.n = rbind(combn(n,2),1:(n*(n-1)/2))
 #' int.list       = gen.int(A)

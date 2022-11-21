@@ -37,6 +37,8 @@ vignettes in the package, which can be referred to after the installation.
 
 ## Quick Start
 First, we call the built-in simulation data set (K* = 4) and the sequences of the tuning parameters (lambda1, lambda2, and lambda3).
+
+```{r eval=FALSE}
 library(cencrne)
 # example.data
 data(example.data)

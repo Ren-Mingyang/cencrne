@@ -79,4 +79,4 @@ evaluation(Z.hat, Z.true, cluster.matrix.hat, cluster.matrix.true,
 
 ```
 
-The algorithm is efficient, and it takes less than five minutes for the toy example.
+The algorithm is efficient, and it takes less than ten minutes for the toy example.
